@@ -3,21 +3,21 @@
 	session_start();
 	$_SESSION['cursession'] = $_REQUEST['college_session'];
 	include_once("../../../connect.php");
-	$grpmas="group_master1";
-	$leddet="ledger_details1";
-	$payment="payment_transaction1";
-	$fees="fee_structure1";
-	$gdcol="gdcol1";
-	$receipt="receipt1";
-	$recparti="recparti1";
-	$transaction="transaction1";
-	$led="ledger_accounts1";
-	$recname="LIPS";
-	$msgapi=mysqli_fetch_row(mysqli_query($con1,"select * from msgpack where mid=1"));
-	$college="1";
-	$tempreceipt="tempreceipt1";
-
-	if ($_REQUEST['college_id'] == "2") {
+	if ($_REQUEST['college_id'] == "1") {
+		$grpmas = "group_master1";
+		$leddet = "ledger_details1";
+		$payment = "payment_transaction1";
+		$fees = "fee_structure1";
+		$gdcol = "gdcol1";
+		$receipt = "receipt1";
+		$recparti = "recparti1";
+		$transaction = "transaction1";
+		$led = "ledger_accounts1";
+		$recname = "GDMC";
+		$msgapi = mysqli_fetch_row(mysqli_query($con1, "select * from msgpack where mid=1"));
+		$college = "1";
+		$tempreceipt = "tempreceipt1";
+	} else if ($_REQUEST['college_id'] == "2") {
 		$grpmas = "group_master2";
 		$leddet = "ledger_details2";
 		$payment = "payment_transaction2";
@@ -27,10 +27,52 @@
 		$recparti = "recparti2";
 		$transaction = "transaction2";
 		$led = "ledger_accounts2";
-		$recname = "LWTTC";
+		$recname = "GDMCMT";
 		$msgapi = mysqli_fetch_row(mysqli_query($con1, "select * from msgpack where mid=2"));
 		$college = "2";
 		$tempreceipt = "tempreceipt2";
+	} else if ($_REQUEST['college_id'] == "3") {
+		$grpmas = "group_master3";
+		$leddet = "ledger_details3";
+		$payment = "payment_transaction3";
+		$fees = "fee_structure3";
+		$gdcol = "gdcol3";
+		$receipt = "receipt3";
+		$recparti = "recparti3";
+		$transaction = "transaction3";
+		$led = "ledger_accounts3";
+		$recname = "GDMCP";
+		$msgapi = mysqli_fetch_row(mysqli_query($con1, "select * from msgpack where mid=3"));
+		$college = "3";
+		$tempreceipt = "tempreceipt3";
+	} else if ($_REQUEST['college_id'] == "4") {
+		$grpmas = "group_master4";
+		$leddet = "ledger_details4";
+		$payment = "payment_transaction4";
+		$fees = "fee_structure4";
+		$gdcol = "gdcol4";
+		$receipt = "receipt4";
+		$recparti = "recparti4";
+		$transaction = "transaction4";
+		$led = "ledger_accounts4";
+		$recname = "GDWTTC";
+		$msgapi = mysqli_fetch_row(mysqli_query($con1, "select * from msgpack where mid=4"));
+		$college = "4";
+		$tempreceipt = "tempreceipt4";
+	} else if ($_REQUEST['college_id'] == "5") {
+		$grpmas = "group_master5";
+		$leddet = "ledger_details5";
+		$payment = "payment_transaction5";
+		$fees = "fee_structure5";
+		$gdcol = "gdcol5";
+		$receipt = "receipt5";
+		$recparti = "recparti5";
+		$transaction = "transaction5";
+		$led = "ledger_accounts5";
+		$recname = "GDITI";
+		$msgapi = mysqli_fetch_row(mysqli_query($con1, "select * from msgpack where mid=5"));
+		$college = "5";
+		$tempreceipt = "tempreceipt5";
 	}
 
 	$sId = $_GET['s_id'];

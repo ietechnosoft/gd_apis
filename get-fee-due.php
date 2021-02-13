@@ -3,25 +3,51 @@
 	session_start();
 	$_SESSION['cursession'] = $_REQUEST['college_session'];
 	include_once("../../../connect.php");
-	$fees="fee_structure1";
-	$gdcol="gdcol1";
-	$receipt="receipt1";
-	$recparti="recparti1";
-	$transaction="transaction1";
-	$led="ledger_accounts1";
-	$name="lips";
-	$college="1";
-	
-	if($_REQUEST['college_id'] == 2 )
-	{
-		$fees="fee_structure2";
-		$gdcol="gdcol2";
-		$receipt="receipt2";
-		$recparti="recparti2";
-		$transaction="transaction2";
-		$led="ledger_accounts2";
-		$name="lwttc";
-		$college="2";
+	if ($_REQUEST['college_id'] == "1") {
+		$fees = "fee_structure1";
+		$gdcol = "gdcol1";
+		$receipt = "receipt1";
+		$recparti = "recparti1";
+		$transaction = "transaction1";
+		$led = "ledger_accounts1";
+		$name = "gdmc";
+		$college = "1";
+	} else if ($_REQUEST['college_id'] == "2") {
+		$fees = "fee_structure2";
+		$gdcol = "gdcol2";
+		$receipt = "receipt2";
+		$recparti = "recparti2";
+		$transaction = "transaction2";
+		$led = "ledger_accounts2";
+		$name = "gdmcmt";
+		$college = "2";
+	} else if ($_REQUEST['college_id'] == "3") {
+		$fees = "fee_structure3";
+		$gdcol = "gdcol3";
+		$receipt = "receipt3";
+		$recparti = "recparti3";
+		$transaction = "transaction3";
+		$led = "ledger_accounts3";
+		$name = "gdmcp";
+		$college = "3";
+	} else if ($_REQUEST['college_id'] == "4") {
+		$fees = "fee_structure4";
+		$gdcol = "gdcol4";
+		$receipt = "receipt4";
+		$recparti = "recparti4";
+		$transaction = "transaction4";
+		$led = "ledger_accounts4";
+		$name = "gdwttc";
+		$college = "4";
+	} else if ($_REQUEST['college_id'] == "5") {
+		$fees = "fee_structure5";
+		$gdcol = "gdcol5";
+		$receipt = "receipt5";
+		$recparti = "recparti5";
+		$transaction = "transaction5";
+		$led = "ledger_accounts5";
+		$name = "gditi";
+		$college = "5";
 	}
 ?>
 <!DOCTYPE html>

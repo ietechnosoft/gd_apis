@@ -16,7 +16,25 @@ if ($_REQUEST['college_id'] == "2") {
 	$ttdetails = "ttdetails2";
 	$college = "2";
 	$gdcol = "gdcol2";
-}
+} else if ($_REQUEST['college_id'] == "3") {
+	$fees = "fee_structure3";
+	$timetable = "timetable3";
+	$ttdetails = "ttdetails3";
+	$college = "3";
+	$gdcol = "gdcol3";
+} else if ($_REQUEST['college_id'] == "4") {
+	$fees = "fee_structure4";
+	$timetable = "timetable4";
+	$ttdetails = "ttdetails4";
+	$college = "4";
+	$gdcol = "gdcol4";
+} else if ($_REQUEST['college_id'] == "5") {
+	$fees = "fee_structure5";
+	$timetable = "timetable5";
+	$ttdetails = "ttdetails5";
+	$college = "5";
+	$gdcol = "gdcol5";
+} else 
 
 	$RESPONCE['result'] = "success";
 	$RESPONCE['period_count'] =  0;

@@ -7,10 +7,19 @@
     $fees = "fee_structure1";
 
 
-    if ($_REQUEST['college_id'] == "2") {
-        $gdcol = "gdcol2";
-        $fees = "fee_structure2";
-    }
+if ($_REQUEST['college_id'] == "2") {
+    $gdcol = "gdcol2";
+    $fees = "fee_structure2";
+} else if ($_REQUEST['college_id'] == "3") {
+    $gdcol = "gdcol3";
+    $fees = "fee_structure3";
+} else if ($_REQUEST['college_id'] == "4") {
+    $gdcol = "gdcol4";
+    $fees = "fee_structure4";
+} else if ($_REQUEST['college_id'] == "5") {
+    $gdcol = "gdcol5";
+    $fees = "fee_structure5";
+}
 
     $RESPONSE = array();
     $RESPONSE['result'] = "success";

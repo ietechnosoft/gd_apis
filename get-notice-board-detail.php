@@ -3,15 +3,28 @@
 	session_start();
 	$_SESSION['cursession'] = $_REQUEST['college_session'];
 	include_once("../../../connect.php");
-	$fees="fee_structure1";
-	$notice="notice1";
-	$col="LIPS";
 
-			if ($_REQUEST['college_id'] == "2") {
-					$notice = "notice2";
-					$fees = "fee_structure2";
-					$col = "LWTTC";
-			}
+if ($_REQUEST['college_id'] == "1") {
+	$fees = "fee_structure1";
+	$notice = "notice1";
+	$col = "GDMC";
+} else if ($_REQUEST['college_id'] == "2") {
+	$notice = "notice2";
+	$fees = "fee_structure2";
+	$col = "GDMCMT";
+} else if ($_REQUEST['college_id'] == "3") {
+	$notice = "notice3";
+	$fees = "fee_structure3";
+	$col = "GDMCP";
+} else if ($_REQUEST['college_id'] == "4") {
+	$notice = "notice4";
+	$fees = "fee_structure4";
+	$col = "GDWTTC";
+} else if ($_REQUEST['college_id'] == "5") {
+	$notice = "notice5";
+	$fees = "fee_structure5";
+	$col = "GDITI";
+}
 
 	$p1=mysqli_query($con,"select * from $notice where n_id='$_REQUEST[n_id]'");
 	$n=mysqli_fetch_row($p1);

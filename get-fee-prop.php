@@ -18,6 +18,21 @@ if ($_REQUEST['college_id'] == "1") {
     $gdcol = "gdcol2";
     $pros = "prosfee2";
     $img = "../../../assets/gdcol2.jpg";
+} else if ($_REQUEST['college_id'] == "3") {
+    $fees = "fee_structure3";
+    $gdcol = "gdcol3";
+    $pros = "prosfee3";
+    $img = "../../../assets/gdcol3.jpg";
+} else if ($_REQUEST['college_id'] == "4") {
+    $fees = "fee_structure4";
+    $gdcol = "gdcol4";
+    $pros = "prosfee4";
+    $img = "../../../assets/gdcol4.jpg";
+} else if ($_REQUEST['college_id'] == "5") {
+    $fees = "fee_structure5";
+    $gdcol = "gdcol5";
+    $pros = "prosfee5";
+    $img = "../../../assets/gdcol5.jpg";
 }
 
 function no_to_words($no)

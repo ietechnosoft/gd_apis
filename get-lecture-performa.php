@@ -3,14 +3,27 @@
 	session_start();
 	$_SESSION['cursession'] = $_REQUEST['college_session'];
 	include_once("../../../connect.php");
-	$fees="fee_structure1";
-	$college="1";
-	$gdcol="gdcol1";
 
-	if($_REQUEST['college_id'] == "2") {
+	if ($_REQUEST['college_id'] = "1") {
+		$fees = "fee_structure1";
+		$college = "1";
+		$gdcol = "gdcol1";
+	} else if ($_REQUEST['college_id'] = "2") {
 		$fees = "fee_structure2";
 		$college = "2";
 		$gdcol = "gdcol2";
+	} else if ($_REQUEST['college_id'] = "3") {
+		$fees = "fee_structure3";
+		$college = "3";
+		$gdcol = "gdcol3";
+	} else if ($_REQUEST['college_id'] = "4") {
+		$fees = "fee_structure4";
+		$college = "4";
+		$gdcol = "gdcol4";
+	} else if ($_REQUEST['college_id'] = "5") {
+		$fees = "fee_structure5";
+		$college = "5";
+		$gdcol = "gdcol5";
 	}
 
 	$f_id = $_REQUEST['f_id'];

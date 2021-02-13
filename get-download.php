@@ -5,11 +5,21 @@
     include_once("../../../connect.php");
     $gdcol="gdcol1";
     $download="download1";
+
+if ($_REQUEST['college_id'] == 2) {
+    $gdcol = "gdcol2";
+    $download = "download2";
+} else if ($_REQUEST['college_id'] == 3) {
+    $gdcol = "gdcol3";
+    $download = "download3";
+} else if ($_REQUEST['college_id'] == 4) {
+    $gdcol = "gdcol4";
+    $download = "download4";
+} else if ($_REQUEST['college_id'] == 5) {
+    $gdcol = "gdcol5";
+    $download = "download5";
+} else 
     
-    if($_REQUEST['college_id'] == 2) {
-		$gdcol = "gdcol2";
-        $download = "download2";
-	}
 
     $RESPONSE = array();
     $RESPONSE['result'] = "success";

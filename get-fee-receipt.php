@@ -20,6 +20,24 @@ if ($_REQUEST['college_id'] == "1") {
     $receipt = "receipt2";
     $recparti = "recparti2";
     $img = "../../../assets/gdcol2.jpg";
+} else if ($_REQUEST['college_id'] == "3") {
+    $fees = "fee_structure3";
+    $gdcol = "gdcol3";
+    $receipt = "receipt3";
+    $recparti = "recparti3";
+    $img = "../../../assets/gdcol3.jpg";
+} else if ($_REQUEST['college_id'] == "4") {
+    $fees = "fee_structure4";
+    $gdcol = "gdcol4";
+    $receipt = "receipt4";
+    $recparti = "recparti4";
+    $img = "../../../assets/gdcol4.jpg";
+} else if ($_REQUEST['college_id'] == "5") {
+    $fees = "fee_structure5";
+    $gdcol = "gdcol5";
+    $receipt = "receipt5";
+    $recparti = "recparti5";
+    $img = "../../../assets/gdcol5.jpg";
 }
 
 

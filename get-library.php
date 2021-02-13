@@ -9,6 +9,15 @@
 if ($_REQUEST['college_id'] == "2") {
 	$gdcol = "gdcol2";
 	$type = "2";
+} else if ($_REQUEST['college_id'] == "3") {
+	$gdcol = "gdcol3";
+	$type = "3";
+} else if ($_REQUEST['college_id'] == "4") {
+	$gdcol = "gdcol4";
+	$type = "4";
+} else if ($_REQUEST['college_id'] == "5") {
+	$gdcol = "gdcol5";
+	$type = "5";
 }
 
     $RESPONSE = array();

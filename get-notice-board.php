@@ -11,7 +11,19 @@ if ($_REQUEST['college_id'] == "2") {
 	$notice = "notice2";
 	$fees = "fee_structure2";
 	$gdcol = "gdcol2";
-}
+} else if ($_REQUEST['college_id'] == "3") {
+	$notice = "notice3";
+	$fees = "fee_structure3";
+	$gdcol = "gdcol3";
+} else if ($_REQUEST['college_id'] == "4") {
+	$notice = "notice4";
+	$fees = "fee_structure4";
+	$gdcol = "gdcol4";
+} else if ($_REQUEST['college_id'] == "5") {
+	$notice = "notice5";
+	$fees = "fee_structure5";
+	$gdcol = "gdcol5";
+} 
 
 	$f[0] = $_REQUEST['f_id'];
 	
