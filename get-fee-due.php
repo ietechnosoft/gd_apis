@@ -140,7 +140,7 @@
 				 
                 <div class="page-content-wrap ">
                     <div class="row  ">
-					 <form class="form-horizontal  " name='frm2' method="post" action="../merchant/<?php echo $name; ?>/gateway_home.php?type=1" enctype="multipart/form-data" onsubmit="return chk();">
+					 <form class="form-horizontal  " name='frm2' method="post" action="../../merchant/<?php echo $name; ?>/gateway_home.php?type=1" enctype="multipart/form-data" onsubmit="return chk();">
 						<div class="panel panel-default  " style="padding: 0px !important;">
 								<div class="panel-body  " style="padding: 0px !important;">
 									<div class="row">
